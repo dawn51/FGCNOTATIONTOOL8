@@ -32,7 +32,7 @@ class ComboOverlay:
         self.close_label = tk.Label(self.title_bar, text=" X ", bg="#cc0000", fg="white", 
                                     font=("Arial", 10, "bold"), cursor="hand2")
         self.close_label.pack(side="right", padx=2, pady=1)
-        self.close_label.bind("<Button-1>", lambda e: self.exit_app())
+        self.close_label.bind("<Button-1>", lambda e: self.close_overlay())
 
         self.desc_label = tk.Label(self.title_bar, text="Select again with F8", bg="#2e2e2e", fg="#aaaaaa", font=("Arial", 8))
         self.desc_label.pack(side="left", padx=5)
