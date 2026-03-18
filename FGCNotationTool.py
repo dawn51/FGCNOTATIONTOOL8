@@ -34,7 +34,7 @@ class ComboOverlay:
         self.close_label.pack(side="right", padx=2, pady=1)
         self.close_label.bind("<Button-1>", lambda e: self.exit_app())
 
-        self.desc_label = tk.Label(self.title_bar, text="f8 ile yeni seç", bg="#2e2e2e", fg="#aaaaaa", font=("Arial", 8))
+        self.desc_label = tk.Label(self.title_bar, text="Select again with F8", bg="#2e2e2e", fg="#aaaaaa", font=("Arial", 8))
         self.desc_label.pack(side="left", padx=5)
 
         # Sliding Window Movement
